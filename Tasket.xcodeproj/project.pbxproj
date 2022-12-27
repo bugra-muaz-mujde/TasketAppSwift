@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C31B4669295A18EE00A2CE69 /* TasketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31B4668295A18EE00A2CE69 /* TasketApp.swift */; };
-		C31B466B295A18EE00A2CE69 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31B466A295A18EE00A2CE69 /* ContentView.swift */; };
 		C31B466D295A18F000A2CE69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C31B466C295A18F000A2CE69 /* Assets.xcassets */; };
 		C31B4670295A18F000A2CE69 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C31B466F295A18F000A2CE69 /* Preview Assets.xcassets */; };
 		C31B4672295A18F000A2CE69 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31B4671295A18F000A2CE69 /* Persistence.swift */; };
@@ -16,6 +15,10 @@
 		C31B467F295A18F000A2CE69 /* TasketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31B467E295A18F000A2CE69 /* TasketTests.swift */; };
 		C31B4689295A18F000A2CE69 /* TasketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31B4688295A18F000A2CE69 /* TasketUITests.swift */; };
 		C31B468B295A18F000A2CE69 /* TasketUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31B468A295A18F000A2CE69 /* TasketUITestsLaunchTests.swift */; };
+		C31B469B295A1A7500A2CE69 /* tasket_task.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31B469A295A1A7500A2CE69 /* tasket_task.swift */; };
+		C31B469D295A228300A2CE69 /* tasket_task_view_model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31B469C295A228300A2CE69 /* tasket_task_view_model.swift */; };
+		C3360DEA295AADA900F7470C /* TasketListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3360DE9295AADA900F7470C /* TasketListView.swift */; };
+		C3360DEE295ADB8F00F7470C /* TasketBottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3360DED295ADB8F00F7470C /* TasketBottomBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 /* Begin PBXFileReference section */
 		C31B4665295A18EE00A2CE69 /* Tasket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C31B4668295A18EE00A2CE69 /* TasketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasketApp.swift; sourceTree = "<group>"; };
-		C31B466A295A18EE00A2CE69 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C31B466C295A18F000A2CE69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C31B466F295A18F000A2CE69 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C31B4671295A18F000A2CE69 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +50,10 @@
 		C31B4684295A18F000A2CE69 /* TasketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TasketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C31B4688295A18F000A2CE69 /* TasketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasketUITests.swift; sourceTree = "<group>"; };
 		C31B468A295A18F000A2CE69 /* TasketUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasketUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C31B469A295A1A7500A2CE69 /* tasket_task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tasket_task.swift; sourceTree = "<group>"; };
+		C31B469C295A228300A2CE69 /* tasket_task_view_model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tasket_task_view_model.swift; sourceTree = "<group>"; };
+		C3360DE9295AADA900F7470C /* TasketListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasketListView.swift; sourceTree = "<group>"; };
+		C3360DED295ADB8F00F7470C /* TasketBottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasketBottomBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,9 @@
 		C31B465C295A18EE00A2CE69 = {
 			isa = PBXGroup;
 			children = (
+				C31B4699295A192800A2CE69 /* Service */,
+				C31B4698295A192000A2CE69 /* ViewModel */,
+				C31B4697295A191400A2CE69 /* Model */,
 				C31B4667295A18EE00A2CE69 /* Tasket */,
 				C31B467D295A18F000A2CE69 /* TasketTests */,
 				C31B4687295A18F000A2CE69 /* TasketUITests */,
@@ -99,11 +108,12 @@
 			isa = PBXGroup;
 			children = (
 				C31B4668295A18EE00A2CE69 /* TasketApp.swift */,
-				C31B466A295A18EE00A2CE69 /* ContentView.swift */,
 				C31B466C295A18F000A2CE69 /* Assets.xcassets */,
 				C31B4671295A18F000A2CE69 /* Persistence.swift */,
 				C31B4673295A18F000A2CE69 /* Tasket.xcdatamodeld */,
 				C31B466E295A18F000A2CE69 /* Preview Content */,
+				C3360DE9295AADA900F7470C /* TasketListView.swift */,
+				C3360DED295ADB8F00F7470C /* TasketBottomBar.swift */,
 			);
 			path = Tasket;
 			sourceTree = "<group>";
@@ -131,6 +141,29 @@
 				C31B468A295A18F000A2CE69 /* TasketUITestsLaunchTests.swift */,
 			);
 			path = TasketUITests;
+			sourceTree = "<group>";
+		};
+		C31B4697295A191400A2CE69 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C31B469A295A1A7500A2CE69 /* tasket_task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C31B4698295A192000A2CE69 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C31B469C295A228300A2CE69 /* tasket_task_view_model.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C31B4699295A192800A2CE69 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +297,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C31B4672295A18F000A2CE69 /* Persistence.swift in Sources */,
-				C31B466B295A18EE00A2CE69 /* ContentView.swift in Sources */,
+				C31B469B295A1A7500A2CE69 /* tasket_task.swift in Sources */,
+				C3360DEA295AADA900F7470C /* TasketListView.swift in Sources */,
+				C3360DEE295ADB8F00F7470C /* TasketBottomBar.swift in Sources */,
+				C31B469D295A228300A2CE69 /* tasket_task_view_model.swift in Sources */,
 				C31B4669295A18EE00A2CE69 /* TasketApp.swift in Sources */,
 				C31B4675295A18F000A2CE69 /* Tasket.xcdatamodeld in Sources */,
 			);

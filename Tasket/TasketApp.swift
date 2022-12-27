@@ -13,7 +13,7 @@ struct TasketApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TasketListView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
